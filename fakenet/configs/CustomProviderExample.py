@@ -19,7 +19,7 @@ def HandleRequest(req, method, post_data=None):
     """
     response = b"Ahoy\r\n"
 
-    if method == "GET":
+    if method == 'GET':
         req.send_response(200)
         req.send_header("Content-Length", len(response))
         req.end_headers()
