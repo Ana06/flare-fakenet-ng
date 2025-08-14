@@ -1,21 +1,23 @@
 # Copyright 2025 Google LLC
 
-import socket
-import socketserver
-import threading
-import sys
 import glob
-import time
 import importlib
+import logging
+import os
 import queue
 import select
-import logging
+import socket
+import socketserver
 import ssl
-from OpenSSL import SSL
-from .ssl_utils import ssl_detector, SSLWrapper
-from . import *
-import os
+import sys
+import threading
+import time
 import traceback
+
+from OpenSSL import SSL
+
+from . import *
+from .ssl_utils import SSLWrapper, ssl_detector
 
 BUF_SZ = 1024
 

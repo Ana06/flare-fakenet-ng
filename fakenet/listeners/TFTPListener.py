@@ -1,17 +1,16 @@
 # Copyright 2025 Google LLC
 
 import logging
-
 import os
-import sys
-
-import threading
-import socketserver
-
 import socket
+import socketserver
 import struct
+import sys
+import threading
+import urllib.error
+import urllib.parse
+import urllib.request
 
-import urllib.request, urllib.parse, urllib.error
 from . import *
 
 EXT_FILE_RESPONSE = {

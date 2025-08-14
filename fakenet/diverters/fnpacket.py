@@ -1,8 +1,10 @@
 # Copyright 2025 Google LLC
 
-import dpkt
-import socket
 import logging
+import socket
+
+import dpkt
+
 from . import debuglevels
 
 

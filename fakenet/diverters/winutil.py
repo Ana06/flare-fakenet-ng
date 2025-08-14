@@ -6,20 +6,17 @@ import logging
 logging.basicConfig(format="%(asctime)s [%(name)18s] %(message)s", datefmt="%m/%d/%y %I:%M:%S %p", level=logging.DEBUG)
 
 import ctypes
-from ctypes import *
-from ctypes.wintypes import *
-
 import os
-import sys
 import socket
 import struct
-from . import diverterbase
-
+import subprocess
+import sys
 import time
-
+from ctypes import *
+from ctypes.wintypes import *
 from winreg import *
 
-import subprocess
+from . import diverterbase
 
 NO_ERROR = 0
 

@@ -3,23 +3,19 @@
 # Diverter for Windows implemented using WinDivert library
 
 import logging
+import os
+import platform
+import socket
+import subprocess
+import threading
+import time
 
+import dpkt
 from pydivert.windivert import *
 
-import socket
-
-import os
-import dpkt
 from . import fnpacket
-
-import time
-import threading
-import platform
-
-from .winutil import *
 from .diverterbase import *
-
-import subprocess
+from .winutil import *
 
 
 class WindowsPacketCtx(fnpacket.PacketCtx):

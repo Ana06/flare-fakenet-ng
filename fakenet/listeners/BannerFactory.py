@@ -1,9 +1,9 @@
 # Copyright 2025 Google LLC
 
+import datetime
 import random
 import socket
 import string
-import datetime
 
 
 class Banner(object):

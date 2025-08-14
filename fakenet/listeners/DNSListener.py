@@ -1,14 +1,13 @@
 # Copyright 2025 Google LLC
 
 import logging
-
-import threading
-import netifaces
-import socketserver
-from dnslib import *
-
-import ssl
 import socket
+import socketserver
+import ssl
+import threading
+
+import netifaces
+from dnslib import *
 
 from . import *
 

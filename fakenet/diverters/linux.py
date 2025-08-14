@@ -1,20 +1,22 @@
 # Copyright 2025 Google LLC
 
-import sys
-import dpkt
-import time
-import socket
 import logging
-import traceback
-import threading
+import socket
 import subprocess
+import sys
+import threading
+import time
+import traceback
+from collections import namedtuple
+
+import dpkt
 import netfilterqueue
-from .linutil import *
+from netfilterqueue import NetfilterQueue
+
 from . import fnpacket
 from .debuglevels import *
 from .diverterbase import *
-from collections import namedtuple
-from netfilterqueue import NetfilterQueue
+from .linutil import *
 
 
 class LinuxPacketCtx(fnpacket.PacketCtx):

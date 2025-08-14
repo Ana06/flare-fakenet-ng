@@ -1,15 +1,16 @@
 # Copyright 2025 Google LLC
 
-import time
-import os
-import traceback
-import subprocess
 import logging
-import shutil
-import sys
-import ssl
+import os
 import random
+import shutil
+import ssl
+import subprocess
+import sys
+import time
+import traceback
 from pathlib import Path
+
 from OpenSSL import crypto
 
 from fakenet import listeners

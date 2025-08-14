@@ -1,18 +1,20 @@
 # Copyright 2025 Google LLC
 
+import binascii
+import glob
+import logging
 import os
 import re
-import glob
 import socket
 import struct
-import logging
-import binascii
-import threading
 import subprocess
-import netfilterqueue
-from .debuglevels import *
+import threading
 from collections import defaultdict
+
+import netfilterqueue
+
 from . import diverterbase
+from .debuglevels import *
 
 
 class IptCmdTemplateBase(object):

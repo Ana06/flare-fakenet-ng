@@ -1,22 +1,22 @@
 # Copyright 2025 Google LLC
 
-import os
 import abc
-import sys
-import time
-import dpkt
-import signal
-import jinja2
-import socket
 import logging
-import threading
+import os
+import signal
+import socket
 import subprocess
-from . import fnpacket
-from . import fnconfig
-from .debuglevels import *
-from collections import namedtuple
-from collections import OrderedDict
+import sys
+import threading
+import time
+from collections import OrderedDict, namedtuple
 from pathlib import Path
+
+import dpkt
+import jinja2
+
+from . import fnconfig, fnpacket
+from .debuglevels import *
 
 
 class DivertParms(object):

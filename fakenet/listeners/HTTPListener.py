@@ -1,27 +1,22 @@
 # Copyright 2025 Google LLC
 
+import http.server
+import importlib.machinery
+import importlib.util
 import logging
+import mimetypes
+import os
+import posixpath
+import socket
+import socketserver
+import ssl
+import sys
+import threading
+import time
 from configparser import ConfigParser
 
-import os
-import sys
-import importlib.util
-import importlib.machinery
-
-import threading
-import socketserver
-import http.server
-
-import ssl
-import socket
-
-import posixpath
-import mimetypes
-
-import time
-
-from .ssl_utils import SSLWrapper
 from . import *
+from .ssl_utils import SSLWrapper
 
 MIME_FILE_RESPONSE = {
     "text/html": "FakeNet.html",

@@ -1,19 +1,15 @@
 # Copyright 2025 Google LLC
 
 import logging
-
-import sys
 import os
-
-import threading
-import socketserver
-
-import ssl
 import socket
-
-from . import BannerFactory
+import socketserver
+import ssl
+import sys
+import threading
 
 from . import *
+from . import BannerFactory
 
 RPL_WELCOME = "001"
 SRV_WELCOME = "Welcome to FakeNet."

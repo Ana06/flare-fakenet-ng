@@ -10,22 +10,16 @@
 
 import logging
 import logging.handlers
-
 import os
-import sys
-import time
-import netifaces
-import threading
-
-from collections import OrderedDict
-
-from optparse import OptionParser, OptionGroup
-from configparser import ConfigParser
-
 import platform
+import sys
+import threading
+import time
+from collections import OrderedDict, namedtuple
+from configparser import ConfigParser
+from optparse import OptionGroup, OptionParser
 
-from optparse import OptionParser
-from collections import namedtuple
+import netifaces
 
 ###############################################################################
 # Listener services

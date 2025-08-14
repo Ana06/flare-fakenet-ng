@@ -1,29 +1,30 @@
 # Copyright 2025 Google LLC
 
+import binascii
+import configparser
+import ctypes
+import errno
+import ftplib
+import hashlib
+import logging
 import os
+import platform
+import poplib
 import re
+import shutil
+import signal
+import smtplib
+import socket
+import ssl
+import subprocess
 import sys
 import time
-import errno
-import ctypes
-import signal
-import socket
-import ftplib
-import poplib
-import shutil
-import hashlib
-import smtplib
-import logging
 import zipfile
-import binascii
-import platform
-import requests
-import netifaces
-import subprocess
-import ssl
-import irc.client
-import configparser
 from collections import OrderedDict
+
+import irc.client
+import netifaces
+import requests
 from icmplib import ping
 from requests.adapters import HTTPAdapter
 
